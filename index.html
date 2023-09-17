@@ -2,6 +2,15 @@
 <html lang="en">
 
   <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MF9Q7CJBSG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MF9Q7CJBSG');
+</script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,6 +28,9 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/whatsapp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!--
 
 TemplateMo 586 Scholar
@@ -81,6 +93,21 @@ https://university-tutor.com/tm-586-scholar
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
+
+
+    <a  class="whats-app" href="#" target="_blank">
+      <i class="fa fa-whatsapp my-float">📝📚</i>
+  </a>
+
+  <menu class="open">
+    <a href="#" class="action"><i class="fab fa-linkedin"></i></a>
+    <a href="#" class="action"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="action"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="action"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="trigger"><i class="fas fa-plus"></i></a>
+  </menu>
+
+
 
   <div class="main-banner" id="top">
     <div class="container">
@@ -519,7 +546,7 @@ https://university-tutor.com/tm-586-scholar
             <div class="row">
               <div class="col-lg-3">
                 <div class="image">
-                  <img src="assets/images/event-01.jpg" alt="">
+                  <img src="assets/images/goofy-teacher.gif" alt="">
                 </div>
               </div>
               <div class="col-lg-9">
@@ -649,6 +676,8 @@ https://university-tutor.com/tm-586-scholar
                     <textarea name="message" id="message" placeholder="Your Message"></textarea>
                   </fieldset>
                 </div>
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile"> 
                 <div class="col-lg-12">
                   <fieldset>
                     <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
@@ -663,19 +692,9 @@ https://university-tutor.com/tm-586-scholar
   </div>
 
 
-  <iframe
-  id="JotFormIFrame-211053709751048"
-  title="🇿🇦  Company Registration "
-  onload="window.parent.scrollTo(0,0)"
-  allowtransparency="true"
-  allowfullscreen="true"
-  allow="geolocation; microphone; camera"
-  src="https://form.jotform.com/211053709751048"
-  frameborder="0"
-  style="min-width:100%;max-width:100%;height:539px;border:none;"
-  scrolling="no"
->
-</iframe>
+
+  <script src="https://www.cognitoforms.com/f/seamless.js" data-key="OXU_5YaWdUyrAZ9eIQyhvw" data-form="1"></script>
+
 
 <!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
@@ -688,89 +707,7 @@ https://university-tutor.com/tm-586-scholar
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->
 
-<script type="text/javascript">
-var ifr = document.getElementById("JotFormIFrame-211053709751048");
-if (ifr) {
-  var src = ifr.src;
-  var iframeParams = [];
-  if (window.location.href && window.location.href.indexOf("?") > -1) {
-    iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-  }
-  if (src && src.indexOf("?") > -1) {
-    iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-    src = src.substr(0, src.indexOf("?"))
-  }
-  iframeParams.push("isIframeEmbed=1");
-  ifr.src = src + "?" + iframeParams.join('&');
-}
-window.handleIFrameMessage = function(e) {
-  if (typeof e.data === 'object') { return; }
-  var args = e.data.split(":");
-  if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-  if (!iframe) { return; }
-  switch (args[0]) {
-    case "scrollIntoView":
-      iframe.scrollIntoView();
-      break;
-    case "setHeight":
-      iframe.style.height = args[1] + "px";
-      if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-        iframe.style.minHeight = args[1] + "px";
-      }
-      break;
-    case "collapseErrorPage":
-      if (iframe.clientHeight > window.innerHeight) {
-        iframe.style.height = window.innerHeight + "px";
-      }
-      break;
-    case "reloadPage":
-      window.location.reload();
-      break;
-    case "loadScript":
-      if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-      var src = args[1];
-      if (args.length > 3) {
-          src = args[1] + ':' + args[2];
-      }
-      var script = document.createElement('script');
-      script.src = src;
-      script.type = 'text/javascript';
-      document.body.appendChild(script);
-      break;
-    case "exitFullscreen":
-      if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-      else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-      else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-      else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-      else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-      break;
-  }
-  var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-  if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-    var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-    iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-  }
-};
-window.isPermitted = function(originUrl, whitelisted_domains) {
-  var url = document.createElement('a');
-  url.href = originUrl;
-  var hostname = url.hostname;
-  var result = false;
-  if( typeof hostname !== 'undefined' ) {
-    whitelisted_domains.forEach(function(element) {
-        if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-            result = true;
-        }
-    });
-    return result;
-  }
-};
-if (window.addEventListener) {
-  window.addEventListener("message", handleIFrameMessage, false);
-} else if (window.attachEvent) {
-  window.attachEvent("onmessage", handleIFrameMessage);
-}
-</script>
+
 
   <footer>
     <div class="container">

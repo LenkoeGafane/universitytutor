@@ -37,6 +37,8 @@
 .flex-pauseplay span {
   text-transform: capitalize;
 }
+
+
 /* ====================================================================================================================
  * BASE STYLES
  * ====================================================================================================================*/
@@ -86,6 +88,8 @@ html[xmlns] .flexslider .slides {
   -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
 }
+
+
 .flexslider .slides {
   zoom: 1;
 }
@@ -279,3 +283,4 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
+
